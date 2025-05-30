@@ -1,10 +1,16 @@
+:hover,
+:focus {
+	outline: none;
+	transition: color 0.3s ease-in-out;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: #ffffff;
 	color: #434455;
+	max-width: 1440px;
 }
-
-/* прибираємо крапки у списках і підкреслення у посиланнях */
 
 a {
 	text-decoration: none;
@@ -60,12 +66,28 @@ nav span {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #2e2f42;
-	padding: 24px 0;
+	padding: 24px 0 0 0;
 	display: block;
+	justify-content: center;
 }
 
 .nav-menu:hover,
 .nav-menu:focus {
+	color: #404bbf;
+}
+
+.active-page:not(:hover):not(:focus) {
+	color: #404bbf;
+}
+
+.active-page::after {
+	content: "";
+	display: block;
+	border-radius: 2px;
+	width: auto;
+	height: 4px;
+	background-color: #404bbf;
+	margin-top: 20px;
 	color: #404bbf;
 }
 
@@ -116,6 +138,11 @@ nav span {
 
 .sec-one {
 	background-color: #2e2f42;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+		url(../images/people-office.png);
+	background-repeat: no-repeat;
+	background-position: center;
+
 	color: #ffffff;
 	font-size: 56px;
 	line-height: 1.07;
@@ -184,6 +211,10 @@ nav span {
 
 .sec-two-list-box {
 	width: calc((100% - 72px) / 4);
+}
+
+.wrap {
+	display: block;
 }
 
 .sec-two-h {
