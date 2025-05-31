@@ -378,6 +378,7 @@ nav span {
 	flex-wrap: wrap;
 	column-gap: 24px;
 	row-gap: 48px;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-li:hover {
@@ -418,7 +419,6 @@ nav span {
 }
 
 .overlay-text {
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	color: #f4f4fd;
 	position: absolute;
 	width: 100%;
