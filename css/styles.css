@@ -380,7 +380,7 @@ nav span {
 	row-gap: 48px;
 }
 
-.portfolio-list:hover {
+.portfolio-list-li:hover {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -408,14 +408,12 @@ nav span {
 }
 
 .overlay-img:hover {
-	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-		0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-img {
 	height: 300px;
 	width: 100%;
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-text {
@@ -466,7 +464,7 @@ nav span {
 	display: flex;
 }
 
-.footer-box {
+footer .container {
 	display: flex;
 	align-items: baseline;
 }
