@@ -405,6 +405,7 @@ nav span {
 .overlay-img {
 	position: relative;
 	overflow: hidden;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-img:hover {
